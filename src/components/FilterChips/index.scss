@@ -1,0 +1,3 @@
+.filter-chips { white-space: nowrap; width: 100%; }
+.filter-chips__row { display: flex; gap: 16rpx; }
+.filter-chip { padding: 14rpx 26rpx; color: #666b65; background: #fff; border-radius: 30rpx; font-size: 25rpx; &--active { background: #48654a; color: #fff; } }

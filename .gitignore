@@ -1,0 +1,29 @@
+# Dependencies and package-manager caches
+node_modules/
+.pnpm-store/
+
+# Build outputs and caches
+dist/
+.swc/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local/private project settings
+project.private.config.json
+.env
+.env.*
+!.env.example
+
+# Archives and OS/editor files
+*.rar
+*.zip
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+

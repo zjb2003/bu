@@ -1,0 +1,7 @@
+.cases-page { background: #f5f6f2; }
+.cases-page__scroll { height: calc(100vh - 174rpx); box-sizing: border-box; padding-bottom: calc(116rpx + env(safe-area-inset-bottom)); }
+.cases-page__search-panel { padding: 30rpx 36rpx 28rpx; display: flex; flex-direction: column; gap: 22rpx; background: #e5e8e3; border-radius: 0 0 38rpx 38rpx; }
+.cases-page__results { padding: 28rpx 36rpx 150rpx; }
+.cases-page__count { display: flex; align-items: center; gap: 18rpx; padding: 0 2rpx 22rpx; color: #303530; font-size: 23rpx; }
+.cases-page__count view { flex: 1; border-top: 2rpx dashed #798078; }
+.cases-page__list { display: flex; flex-direction: column; gap: 28rpx; }

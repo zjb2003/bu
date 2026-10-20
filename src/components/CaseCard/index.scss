@@ -1,0 +1,6 @@
+.case-card { display: flex; align-items: center; gap: 22rpx; padding: 20rpx; min-height: 194rpx; background: #fff; border-radius: 34rpx; box-sizing: border-box; }
+.case-card__image { width: 180rpx; height: 152rpx; border-radius: 26rpx; flex: none; background: #e5e8e2; }
+.case-card__copy { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 12rpx; }
+.case-card__title { font-size: 31rpx; font-weight: 700; color: #151815; }
+.case-card__summary { font-size: 24rpx; color: #61665f; line-height: 1.45; }
+.case-card__arrow { color: #747a73; font-size: 40rpx; padding: 0 8rpx; }

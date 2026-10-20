@@ -1,0 +1,16 @@
+import flagCover from '../../assets/images/home-000.jpg'
+import volleyball from '../../assets/images/cases-002.jpg'
+import homeHero from '../../assets/images/home-000.jpg'
+import resourceNike from '../../assets/images/resources-000.jpg'
+import resourceYouth from '../../assets/images/resources-002.jpg'
+import nikeLogo from '../../assets/images/resources-009.png'
+import youthLogo from '../../assets/images/resources-005.png'
+import lessonPage1 from '../../assets/previews/lesson-000.jpg'
+import lessonPage2 from '../../assets/previews/lesson-002.jpg'
+import pdfPage1 from '../../assets/previews/course-pdf-000.jpg'
+import pdfPage2 from '../../assets/previews/course-pdf-002.jpg'
+import pdfPage3 from '../../assets/previews/course-pdf-004.jpg'
+import projectHero from '../../assets/images/about-000.jpg'
+import projectLogo from '../../assets/images/about-004.jpg'
+
+export const mockAssets = { flagCover, volleyball, homeHero, resourceNike, resourceYouth, nikeLogo, youthLogo, lessonPage1, lessonPage2, pdfPage1, pdfPage2, pdfPage3, projectHero, projectLogo }

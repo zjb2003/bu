@@ -1,0 +1,34 @@
+{
+  "name": "boundless-us-mini-program",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Boundless Us 微信小程序演示项目",
+  "scripts": {
+    "assets:prepare": "python scripts/prepare-mini-assets.py",
+    "dev:weapp": "taro build --type weapp --watch",
+    "build:weapp": "taro build --type weapp",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tarojs/components": "4.1.5",
+    "@tarojs/helper": "4.1.5",
+    "@tarojs/plugin-framework-react": "4.1.5",
+    "@tarojs/plugin-platform-weapp": "4.1.5",
+    "@tarojs/react": "4.1.5",
+    "@tarojs/runtime": "4.1.5",
+    "@tarojs/taro": "4.1.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.26.0",
+    "@babel/preset-react": "7.26.3",
+    "@tarojs/cli": "4.1.5",
+    "@tarojs/webpack5-runner": "4.1.5",
+    "@types/react": "18.3.12",
+    "babel-preset-taro": "4.1.5",
+    "react-refresh": "0.14.2",
+    "sass": "1.83.0",
+    "typescript": "5.6.3"
+  }
+}

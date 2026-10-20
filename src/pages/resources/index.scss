@@ -1,0 +1,5 @@
+.resources-page { background: #e5e8e3; }
+.resources-page__scroll { height: calc(100vh - 174rpx); padding-bottom: calc(116rpx + env(safe-area-inset-bottom)); box-sizing: border-box; }
+.resources-page__content { padding: 26rpx 36rpx 150rpx; display: flex; flex-direction: column; gap: 24rpx; }
+.resources-page__count { color: #626861; font-size: 22rpx; }
+.resources-page__list { display: flex; flex-direction: column; gap: 28rpx; }

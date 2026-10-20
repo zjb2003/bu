@@ -1,0 +1,19 @@
+.case-detail-page { background: #f5f6f2; }
+.case-detail__header { height: 174rpx; padding: 70rpx 30rpx 18rpx; display: flex; align-items: flex-end; justify-content: space-between; background: #fff; }
+.case-detail__back, .case-detail__header-space { width: 80rpx; }
+.case-detail__back { color: #171a17; font-size: 64rpx; line-height: 54rpx; }
+.case-detail__header-title { color: #151815; font-size: 32rpx; font-weight: 700; line-height: 54rpx; }
+.case-detail-page__scroll { height: calc(100vh - 174rpx); padding-bottom: 44rpx; box-sizing: border-box; }
+.case-detail__overview { background: #fff; border-radius: 0 0 38rpx 38rpx; overflow: hidden; }
+.case-detail__gallery { width: 100%; height: 430rpx; background: #d5dad2; }
+.case-detail__cover { display: block; width: 100%; height: 100%; background: #d5dad2; }
+.case-detail__info { padding: 30rpx 38rpx 34rpx; display: flex; flex-direction: column; gap: 16rpx; background: #fff; }
+.case-detail__title { color: #151815; font-size: 38rpx; font-weight: 700; }
+.case-detail__author { color: #4d534d; font-size: 25rpx; }
+.case-detail__description { color: #383d38; font-size: 25rpx; line-height: 1.65; }
+.case-detail__tags { display: flex; gap: 12rpx; flex-wrap: wrap; padding-top: 6rpx; }
+.case-detail__tags text { padding: 8rpx 20rpx; border-radius: 24rpx; color: #fff; background: #66805e; font-size: 21rpx; }
+.case-detail__documents { margin-top: 24rpx; padding-bottom: 32rpx; background: #e5e8e3; border-radius: 38rpx 38rpx 0 0; overflow: hidden; }
+.case-detail__preview-heading { display: block; padding: 30rpx 34rpx 0; color: #282d28; font-size: 28rpx; font-weight: 700; }
+.case-detail__download, .case-detail__download-note { display: flex; flex-wrap: wrap; padding: 18rpx 34rpx 40rpx; font-size: 24rpx; color: #343a34; }
+.case-detail__download-url { color: #48654a; text-decoration: underline; word-break: break-all; }

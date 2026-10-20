@@ -1,0 +1,17 @@
+.home-page { background: #fff; }
+.home-page__scroll { height: 100vh; padding-bottom: calc(132rpx + env(safe-area-inset-bottom)); box-sizing: border-box; }
+.home-carousel { position: relative; width: 100%; height: 760rpx; overflow: hidden; background: #fff; }
+.home-carousel__swiper, .home-carousel__image { display: block; width: 100%; height: 100%; }
+.home-carousel__fade { position: absolute; z-index: 2; left: 0; right: 0; height: 116rpx; pointer-events: none; }
+.home-carousel__fade--top { top: 0; background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, .76) 22%, rgba(255, 255, 255, 0) 100%); }
+.home-carousel__fade--bottom { bottom: 0; background: linear-gradient(0deg, #fff 0%, rgba(255, 255, 255, .78) 24%, rgba(255, 255, 255, 0) 100%); }
+.home-intro { display: flex; align-items: flex-end; gap: 20rpx; padding: 26rpx 42rpx 36rpx; background: #fff; }
+.home-intro__avatar { flex: none; width: 124rpx; height: 124rpx; border-radius: 50%; }
+.home-intro__bubble { flex: 1; min-height: 118rpx; display: flex; align-items: center; padding: 22rpx 28rpx; border-radius: 30rpx 30rpx 30rpx 0; background: #e5e8e2; color: #151815; font-size: 26rpx; font-weight: 600; line-height: 1.5; box-sizing: border-box; }
+.home-actions { position: relative; min-height: 390rpx; padding: 4rpx 42rpx 44rpx; overflow: hidden; }
+.home-actions__watermark { position: absolute; z-index: 0; left: 50%; bottom: -126rpx; width: 650rpx; height: 330rpx; opacity: .24; transform: translateX(-50%); }
+.home-actions__cards { position: relative; z-index: 1; display: flex; gap: 18rpx; }
+.home-card { min-width: 0; flex: 1; height: 340rpx; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 42rpx 14rpx 28rpx; border: 2rpx solid rgba(143, 166, 137, .72); border-radius: 34rpx; background: rgba(229, 232, 226, .82); text-align: center; box-sizing: border-box; }
+.home-card__title { font-size: 32rpx; font-weight: 700; white-space: nowrap; }
+.home-card__copy { min-height: 76rpx; font-size: 23rpx; line-height: 1.55; }
+.home-card__icon { display: block; width: 70rpx; height: 70rpx; opacity: .82; }
