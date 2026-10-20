@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Boundless Us Resource Package",
+  "type": "object",
+  "required": ["version", "shared", "home", "about", "categories", "cases", "resources"],
+  "properties": {
+    "version": { "const": 1 },
+    "shared": {
+      "type": "object",
+      "required": ["avatar"],
+      "properties": { "avatar": { "$ref": "#/$defs/imagePath" } },
+      "additionalProperties": false
+    },
+    "home": {
+      "type": "object",
+      "required": ["carousel", "cardsBackground"],
+      "properties": {
+        "carousel": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/imagePath" } },
+        "cardsBackground": { "$ref": "#/$defs/imagePath" }
+      },
+      "additionalProperties": false
+    },
+    "about": {
+      "type": "object",
+      "required": ["title", "heroImage", "introParagraphs", "contactLabel", "contactValue"],
+      "properties": {
+        "title": { "$ref": "#/$defs/text" },
+        "heroImage": { "$ref": "#/$defs/imagePath" },
+        "introParagraphs": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/text" } },
+        "contactLabel": { "$ref": "#/$defs/text" },
+        "contactValue": { "$ref": "#/$defs/text" }
+      },
+      "additionalProperties": false
+    },
+    "categories": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/category" } },
+    "cases": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/case" } },
+    "resources": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/resource" } }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "text": { "type": "string", "minLength": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "imagePath": { "type": "string", "pattern": "^assets/.+\\.(jpg|jpeg|png|webp)$" },
+    "pdfPath": { "type": "string", "pattern": "^source-files/.+\\.pdf$" },
+    "url": { "type": ["string", "null"], "pattern": "^https://" },
+    "category": {
+      "type": "object",
+      "required": ["id", "name", "sortOrder"],
+      "properties": { "id": { "$ref": "#/$defs/id" }, "name": { "$ref": "#/$defs/text" }, "sortOrder": { "type": "integer" } },
+      "additionalProperties": false
+    },
+    "document": {
+      "type": "object",
+      "required": ["file", "downloadUrl", "previews"],
+      "properties": {
+        "file": { "$ref": "#/$defs/pdfPath" },
+        "downloadUrl": { "$ref": "#/$defs/url" },
+        "previews": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/imagePath" } }
+      },
+      "additionalProperties": false
+    },
+    "case": {
+      "type": "object",
+      "required": ["id", "name", "teacher", "summary", "description", "categoryId", "gradeRange", "durationMinutes", "tags", "sortOrder", "thumbnail", "carousel", "lessonPlan", "coursePdf"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "name": { "$ref": "#/$defs/text" }, "teacher": { "$ref": "#/$defs/text" },
+        "summary": { "$ref": "#/$defs/text" }, "description": { "$ref": "#/$defs/text" }, "categoryId": { "$ref": "#/$defs/id" },
+        "gradeRange": { "$ref": "#/$defs/text" }, "durationMinutes": { "type": "integer", "minimum": 1 },
+        "tags": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/text" } }, "sortOrder": { "type": "integer" },
+        "thumbnail": { "$ref": "#/$defs/imagePath" }, "carousel": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/imagePath" } },
+        "lessonPlan": { "$ref": "#/$defs/document" }, "coursePdf": { "$ref": "#/$defs/document" }
+      },
+      "additionalProperties": false
+    },
+    "resource": {
+      "type": "object",
+      "required": ["id", "name", "organization", "image", "thumbnail", "summary", "description", "tags", "link", "sortOrder"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" }, "name": { "$ref": "#/$defs/text" }, "organization": { "$ref": "#/$defs/text" },
+        "image": { "$ref": "#/$defs/imagePath" }, "thumbnail": { "$ref": "#/$defs/imagePath" }, "summary": { "$ref": "#/$defs/text" },
+        "description": { "$ref": "#/$defs/text" }, "tags": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/text" } },
+        "link": { "$ref": "#/$defs/url" }, "sortOrder": { "type": "integer" }
+      },
+      "additionalProperties": false
+    }
+  }
+}
