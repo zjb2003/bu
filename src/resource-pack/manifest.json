@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "shared": {
+    "avatar": "assets/shared/avatar.jpg"
+  },
+  "home": {
+    "carousel": [
+      "assets/home/carousel-001.jpg",
+      "assets/home/carousel-002.jpg",
+      "assets/home/carousel-003.jpg"
+    ],
+    "cardsBackground": "assets/home/cards-background.jpg"
+  },
+  "about": {
+    "title": "Boundless Us",
+    "heroImage": "assets/about/hero.jpg",
+    "introParagraphs": [
+      "Boundless Us 是清华大学“清心童趣”团队在清华-耐克可持续发展领导力项目指导下发起的青年赋能教育公益项目，延续耐克“撒开脚丫”（Boundless Girls）精神。我们联结青年与公益资源，通过书信交流、榜样访谈、暑期支教和线上平台，以运动陪伴女孩强健体魄、建立自信、释放潜能，让每一个“我”成为更广阔的“我们”。"
+    ],
+    "contactLabel": "联系方式",
+    "contactValue": "HH07ZZ10JJ（微信号）"
+  },
+  "categories": [
+    { "id": "body-confidence", "name": "身体自信", "sortOrder": 10 },
+    { "id": "technology", "name": "科技创新", "sortOrder": 20 },
+    { "id": "humanities", "name": "人文素养", "sortOrder": 30 }
+  ],
+  "cases": [
+    {
+      "id": "flag-football-intro",
+      "name": "腰旗橄榄球入门",
+      "teacher": "李云翔老师",
+      "summary": "传球、跑动、配合——每个人都是不可或缺的一环",
+      "description": "无接触的腰旗橄榄球以扯腰旗代替身体撞倒，兼顾策略、体能与团队协作，是一项安全有趣的运动。",
+      "categoryId": "body-confidence",
+      "gradeRange": "4-6年级",
+      "durationMinutes": 90,
+      "tags": ["身体自信", "4-6年级", "90min"],
+      "sortOrder": 10,
+      "thumbnail": "assets/cases/flag-football/thumbnail.jpg",
+      "carousel": ["assets/cases/flag-football/carousel-001.jpg", "assets/cases/flag-football/carousel-002.jpg"],
+      "lessonPlan": {
+        "file": "source-files/cases/flag-football/lesson-plan.pdf",
+        "downloadUrl": "https://www.baidu.com",
+        "previews": ["assets/cases/flag-football/lesson-plan-page-001.jpg", "assets/cases/flag-football/lesson-plan-page-002.jpg"]
+      },
+      "coursePdf": {
+        "file": "source-files/cases/flag-football/course.pdf",
+        "downloadUrl": "https://info.tsinghua.edu.cn",
+        "previews": ["assets/cases/flag-football/course-page-001.jpg", "assets/cases/flag-football/course-page-002.jpg", "assets/cases/flag-football/course-page-003.jpg"]
+      }
+    },
+    {
+      "id": "volleyball-intro",
+      "name": "排球入门",
+      "teacher": "示例课程团队",
+      "summary": "每一次伸手迎球，都是一次勇敢的尝试",
+      "description": "从轻松的传接球开始，在合作练习中体验运动乐趣。",
+      "categoryId": "body-confidence",
+      "gradeRange": "5-6年级",
+      "durationMinutes": 60,
+      "tags": ["身体自信", "5-6年级", "60min"],
+      "sortOrder": 20,
+      "thumbnail": "assets/cases/volleyball/thumbnail.jpg",
+      "carousel": ["assets/cases/volleyball/carousel-001.jpg"],
+      "lessonPlan": { "file": "source-files/cases/volleyball/lesson-plan.pdf", "downloadUrl": "https://www.baidu.com", "previews": ["assets/cases/volleyball/lesson-plan-page-001.jpg"] },
+      "coursePdf": { "file": "source-files/cases/volleyball/course.pdf", "downloadUrl": "https://info.tsinghua.edu.cn", "previews": ["assets/cases/volleyball/course-page-001.jpg"] }
+    },
+    {
+      "id": "community-data-story",
+      "name": "社区观察与数据故事",
+      "teacher": "示例课程团队",
+      "summary": "从身边的问题出发，用观察和数据讲述发现",
+      "description": "围绕校园和社区开展观察记录，学习整理信息并进行友好表达。",
+      "categoryId": "technology",
+      "gradeRange": "6-8年级",
+      "durationMinutes": 75,
+      "tags": ["科技创新", "6-8年级", "75min"],
+      "sortOrder": 30,
+      "thumbnail": "assets/cases/community-data/thumbnail.jpg",
+      "carousel": ["assets/cases/community-data/carousel-001.jpg"],
+      "lessonPlan": { "file": "source-files/cases/community-data/lesson-plan.pdf", "downloadUrl": "https://www.gov.cn", "previews": ["assets/cases/community-data/lesson-plan-page-001.jpg"] },
+      "coursePdf": { "file": "source-files/cases/community-data/course.pdf", "downloadUrl": "https://www.tsinghua.edu.cn", "previews": ["assets/cases/community-data/course-page-001.jpg"] }
+    },
+    {
+      "id": "story-circle",
+      "name": "故事与倾听练习",
+      "teacher": "示例课程团队",
+      "summary": "在轮流讲述与倾听中发现彼此的经验",
+      "description": "以小组故事圈练习倾听、复述和表达感受。",
+      "categoryId": "humanities",
+      "gradeRange": "4-6年级",
+      "durationMinutes": 45,
+      "tags": ["人文素养", "4-6年级", "45min"],
+      "sortOrder": 40,
+      "thumbnail": "assets/cases/story-circle/thumbnail.jpg",
+      "carousel": ["assets/cases/story-circle/carousel-001.jpg"],
+      "lessonPlan": { "file": "source-files/cases/story-circle/lesson-plan.pdf", "downloadUrl": "https://www.baidu.com", "previews": ["assets/cases/story-circle/lesson-plan-page-001.jpg"] },
+      "coursePdf": { "file": "source-files/cases/story-circle/course.pdf", "downloadUrl": "https://info.tsinghua.edu.cn", "previews": ["assets/cases/story-circle/course-page-001.jpg"] }
+    }
+  ],
+  "resources": [
+    {
+      "id": "boundless-girls",
+      "name": "“撒开脚丫”",
+      "organization": "耐克与公益伙伴",
+      "image": "assets/resources/boundless-girls/image.jpg",
+      "thumbnail": "assets/resources/boundless-girls/thumbnail.png",
+      "summary": "帮助乡村女孩通过运动变得更自信、更快乐。",
+      "description": "耐克联合公益伙伴发起的全国性公益项目。",
+      "tags": ["运动", "女孩成长"],
+      "link": null,
+      "sortOrder": 10
+    },
+    {
+      "id": "youth",
+      "name": "益微青年",
+      "organization": "益微青年",
+      "image": "assets/resources/youth/image.jpg",
+      "thumbnail": "assets/resources/youth/thumbnail.png",
+      "summary": "支持青年在乡村夏令营中独立、自信、有担当地成长。",
+      "description": "青年成长与乡村教育公益资源。",
+      "tags": ["青年成长", "乡村教育"],
+      "link": null,
+      "sortOrder": 20
+    }
+  ]
+}
